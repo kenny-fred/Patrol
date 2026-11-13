@@ -1,0 +1,28 @@
+# Description
+
+**Patrol** est un assistant de sécurité de bureau. Contrairement aux logiciels de sécurité traditionnels, Patrol utilise un compagnon animé (style pixel-art) pour surveiller votre PC en votre absence, détecter les intrusions, et capturer l'identité des personnes non autorisées.
+
+## Fonctionnalités Principales
+
+- **Compagnon Animé** : Un assistant de bureau qui s'anime (idle, sauts, regarde autour de lui) et réagit en temps réel.
+- **Verrouillage** : Marquez une fenêtre de travail. Si quiconque change de fenêtre ou minimise l'application surveillée, l'alerte est déclenchée.
+- **Tripwire (Fil-piège)** : Une fois la protection armée, le moindre mouvement de souris (1 pixel) ou n'importe quelle touche de clavier pressée (hors séquence de déverrouillage) est considéré comme une intrusion.
+- **Séquence de Déverrouillage** : Seul le propriétaire connaît la séquence exacte (`Ctrl` -> `Alt` -> `Q`) et le code PIN associé pour désarmer la protection.
+- **Capture d'Intrus** : À la moindre alerte, la webcam prend une photo de l'intrus et la sauvegarde dans un dossier.
+- **Synthèse Vocale** : L'assistant communique vocalement avec vous ("Protection activée", "Intrus détecté").
+- **Faillible par Design** : Si un intrus tape un mauvais code PIN ou tente de fermer la fenêtre de sécurité, le PC est immédiatement verrouillé.
+
+## Installation
+
+1. Téléchargez le fichier `Setup_Patrol.exe` depuis la section Releases.
+2. Lancez l'installateur et suivez les étapes (l'option "Démarrer avec Windows" est recommandée).
+3. L'application s'installera dans votre dossier utilisateur (pas besoin des droits admin pour l'installation).
+4. Au premier lancement, vous serez invité à définir votre code PIN secret.
+
+## Comment l'utiliser ?
+
+1. **Marquer** : Faites un clic droit sur l'assistant -> *Marquer la fenêtre active*. Cliquez sur la fenêtre que vous voulez protéger.
+2. **Armer** : Clic droit -> *Armer la surveillance*. L'assistant disparaît pour ne pas éveiller les soupçons.
+3. **S'absenter** : Vous pouvez partir tranquille.
+4. **Revenir** : Appuyez sur `Ctrl`, puis `Alt`, puis `Q`. Entrez votre code PIN pour désarmer.
+5. **En cas d'intrusion** : L'assistant réapparaît, une bulle de dialogue s'affiche avec la photo de l'intrus, et le PC se verrouille.
